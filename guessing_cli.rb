@@ -1,7 +1,6 @@
 # Code your solution here!
 def run_guessing_game
   usr_input = ""
-  puts "Guess a number between 1 and 6."
   while usr_input != "exit"
     prng = Random.new
     comp_guess = prng.rand(1..6)
@@ -11,5 +10,6 @@ def run_guessing_game
     else
       puts "Goodbye!"
     end
+    puts "Guess a number between 1 and 6."
   end
 end
