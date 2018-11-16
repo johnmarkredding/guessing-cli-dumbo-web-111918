@@ -1,7 +1,7 @@
 # Code your solution here!
 def run_guessing_game
   usr_input = ""
-  until usr_input == "exit"
+  while usr_input != "exit"
     prng = Random.new
     comp_guess = prng.rand(1...7)
     usr_input = gets.chomp
