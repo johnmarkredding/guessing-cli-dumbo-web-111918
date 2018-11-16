@@ -1,8 +1,9 @@
 # Code your solution here!
 def run_guessing_game
+  correct_ans = false;
   usr_input = ""
   puts "Guess a number between 1 and 6."
-  while usr_input != "exit"
+  while usr_input != "exit" && !correct_ans
     prng = Random.new
     comp_guess = prng.rand(1..6)
     usr_input = gets.chomp
