@@ -11,7 +11,6 @@ def run_guessing_game
       puts (usr_input.to_i == comp_guess) ? "You guessed the correct number!":"The computer guessed #{comp_guess}."
     else
       puts "Goodbye!"
-      break
     end
   end
 end
